@@ -51,3 +51,23 @@ To run this project, you need to have Python and PyTorch installed on your machi
    ```bash
    git clone https://github.com/your-username/LeNet5-Paper-Replication.git
    cd LeNet5-Paper-Replication
+   ```   
+
+2. Install requirements
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+   
+### Train the model
+   Tweak necessary hyperparameters in `config.py`
+   ```bash
+   python train.py
+   ```
+
+### Run Inference
+   
+   ```bash
+   python inference.py
+   ```
+

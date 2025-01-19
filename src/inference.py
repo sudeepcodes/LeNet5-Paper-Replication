@@ -56,14 +56,16 @@ def visualize_image(image_path):
 
 if __name__ == '__main__':
     MODELS_FOLDER = os.environ['MODELS_FOLDER']
+    SAMPLE_IMAGE_PATH = os.environ['SAMPLE_IMAGE_PATH']
+
     # Load the trained model
     lenet_model = load_model(MODELS_FOLDER + '/lenet5_model.pth')
 
     # Predict the digit in the input image
-    predicted_class = predict_image('../sample.jpg', lenet_model)
+    predicted_class = predict_image(SAMPLE_IMAGE_PATH, lenet_model)
 
     # Print the prediction
     print(f"Predicted Digit: {predicted_class}")
 
     # Visualize the image
-    visualize_image('../sample.jpg')
+    visualize_image(SAMPLE_IMAGE_PATH)

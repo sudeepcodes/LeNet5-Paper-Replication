@@ -71,3 +71,5 @@ To run this project, you need to have Python and PyTorch installed on your machi
    python inference.py
    ```
 
+## Results
+![img.png](img.png)
